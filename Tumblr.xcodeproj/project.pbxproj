@@ -14,6 +14,7 @@
 		DA74C1AF1C7F87E6008DB769 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA74C1AD1C7F87E6008DB769 /* LaunchScreen.storyboard */; };
 		DA74C1BA1C7F87E6008DB769 /* TumblrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA74C1B91C7F87E6008DB769 /* TumblrTests.swift */; };
 		DA74C1C51C7F87E6008DB769 /* TumblrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA74C1C41C7F87E6008DB769 /* TumblrUITests.swift */; };
+		DA74C1D71C7F8A62008DB769 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA74C1D61C7F8A62008DB769 /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		DA74C1C01C7F87E6008DB769 /* TumblrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TumblrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA74C1C41C7F87E6008DB769 /* TumblrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TumblrUITests.swift; sourceTree = "<group>"; };
 		DA74C1C61C7F87E6008DB769 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA74C1D61C7F8A62008DB769 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				DA74C1A41C7F87E6008DB769 /* AppDelegate.swift */,
 				DA74C1A61C7F87E6008DB769 /* ViewController.swift */,
+				DA74C1D61C7F8A62008DB769 /* TabBarViewController.swift */,
 				DA74C1A81C7F87E6008DB769 /* Main.storyboard */,
 				DA74C1AB1C7F87E6008DB769 /* Assets.xcassets */,
 				DA74C1AD1C7F87E6008DB769 /* LaunchScreen.storyboard */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA74C1A71C7F87E6008DB769 /* ViewController.swift in Sources */,
+				DA74C1D71C7F8A62008DB769 /* TabBarViewController.swift in Sources */,
 				DA74C1A51C7F87E6008DB769 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
