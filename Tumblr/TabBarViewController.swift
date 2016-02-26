@@ -11,17 +11,34 @@ import UIKit
 class TabBarViewController: UIViewController {
 
     @IBOutlet weak var contentView: UIView!
+    @IBOutlet var buttons: [UIButton]!
+    
+    var homeViewController: UIViewController!
+    var searchViewController: UIViewController!
+    var accountViewController: UIViewController!
+    var trendingViewController: UIViewController!
+    
+    var viewControllers: [UIViewController]!
+    
+    var selectedIndex: Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        homeViewController = storyboard.instantiateViewControllerWithIdentifier("HomeVC")
+        searchViewController = storyboard.instantiateViewControllerWithIdentifier("SearchVC")
+        accountViewController = storyboard.instantiateViewControllerWithIdentifier("AccountVC")
+        trendingViewController = storyboard.instantiateViewControllerWithIdentifier("TrendingVC")
+        
+        viewControllers = [homeViewController, searchViewController, accountViewController, trendingViewController]
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
+    @IBAction func didPressTab(sender: UIButton) {
+        
+    }
 
     /*
     // MARK: - Navigation

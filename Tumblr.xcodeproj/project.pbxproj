@@ -15,6 +15,11 @@
 		DA74C1BA1C7F87E6008DB769 /* TumblrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA74C1B91C7F87E6008DB769 /* TumblrTests.swift */; };
 		DA74C1C51C7F87E6008DB769 /* TumblrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA74C1C41C7F87E6008DB769 /* TumblrUITests.swift */; };
 		DA74C1D71C7F8A62008DB769 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA74C1D61C7F8A62008DB769 /* TabBarViewController.swift */; };
+		DA74C1D91C7FBA28008DB769 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA74C1D81C7FBA28008DB769 /* HomeViewController.swift */; };
+		DA74C1DB1C7FBB26008DB769 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA74C1DA1C7FBB26008DB769 /* SearchViewController.swift */; };
+		DA74C1DD1C7FBB32008DB769 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA74C1DC1C7FBB32008DB769 /* ComposeViewController.swift */; };
+		DA74C1DF1C7FBB3C008DB769 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA74C1DE1C7FBB3C008DB769 /* AccountViewController.swift */; };
+		DA74C1E11C7FBB45008DB769 /* TrendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA74C1E01C7FBB45008DB769 /* TrendingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		DA74C1C41C7F87E6008DB769 /* TumblrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TumblrUITests.swift; sourceTree = "<group>"; };
 		DA74C1C61C7F87E6008DB769 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA74C1D61C7F8A62008DB769 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		DA74C1D81C7FBA28008DB769 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DA74C1DA1C7FBB26008DB769 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		DA74C1DC1C7FBB32008DB769 /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
+		DA74C1DE1C7FBB3C008DB769 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		DA74C1E01C7FBB45008DB769 /* TrendingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrendingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +113,11 @@
 				DA74C1A61C7F87E6008DB769 /* ViewController.swift */,
 				DA74C1D61C7F8A62008DB769 /* TabBarViewController.swift */,
 				DA74C1A81C7F87E6008DB769 /* Main.storyboard */,
+				DA74C1DC1C7FBB32008DB769 /* ComposeViewController.swift */,
+				DA74C1DE1C7FBB3C008DB769 /* AccountViewController.swift */,
+				DA74C1E01C7FBB45008DB769 /* TrendingViewController.swift */,
+				DA74C1DA1C7FBB26008DB769 /* SearchViewController.swift */,
+				DA74C1D81C7FBA28008DB769 /* HomeViewController.swift */,
 				DA74C1AB1C7F87E6008DB769 /* Assets.xcassets */,
 				DA74C1AD1C7F87E6008DB769 /* LaunchScreen.storyboard */,
 				DA74C1B01C7F87E6008DB769 /* Info.plist */,
@@ -262,9 +277,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA74C1DB1C7FBB26008DB769 /* SearchViewController.swift in Sources */,
+				DA74C1E11C7FBB45008DB769 /* TrendingViewController.swift in Sources */,
 				DA74C1A71C7F87E6008DB769 /* ViewController.swift in Sources */,
+				DA74C1DF1C7FBB3C008DB769 /* AccountViewController.swift in Sources */,
 				DA74C1D71C7F8A62008DB769 /* TabBarViewController.swift in Sources */,
+				DA74C1DD1C7FBB32008DB769 /* ComposeViewController.swift in Sources */,
 				DA74C1A51C7F87E6008DB769 /* AppDelegate.swift in Sources */,
+				DA74C1D91C7FBA28008DB769 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
