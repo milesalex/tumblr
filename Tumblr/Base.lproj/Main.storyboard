@@ -1,24 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="odi-F6-IhK">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tumblr" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="162.66666666666666" y="406.59333333333331"/>
-        </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="MA6-19-4Tz">
             <objects>
@@ -31,7 +17,7 @@
                                 <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uXR-TJ-nzu">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="uXR-TJ-nzu">
                                         <rect key="frame" x="0.0" y="0.0" width="64" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="home_icon"/>
@@ -40,24 +26,16 @@
                                             <action selector="didPressTab:" destination="odi-F6-IhK" eventType="touchUpInside" id="FGP-0b-aDH"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4iS-Ls-wWU">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="4iS-Ls-wWU">
                                         <rect key="frame" x="64" y="0.0" width="64" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="search_icon"/>
+                                        <state key="selected" image="search_selected_icon"/>
                                         <connections>
                                             <action selector="didPressTab:" destination="odi-F6-IhK" eventType="touchUpInside" id="5Yv-9K-wWN"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="KPf-zc-p5o">
-                                        <rect key="frame" x="192" y="0.0" width="64" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="account_icon"/>
-                                        <state key="selected" image="account_selected_icon"/>
-                                        <connections>
-                                            <action selector="didPressTab:" destination="odi-F6-IhK" eventType="touchUpInside" id="5zO-Vj-UEN"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="83g-bM-Y5Q">
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="83g-bM-Y5Q">
                                         <rect key="frame" x="256" y="0.0" width="64" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="trending_icon"/>
@@ -70,6 +48,18 @@
                                         <rect key="frame" x="128" y="0.0" width="64" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="compose_button"/>
+                                        <connections>
+                                            <action selector="didPressCompose:" destination="odi-F6-IhK" eventType="touchUpInside" id="1yG-8D-rCj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="KPf-zc-p5o">
+                                        <rect key="frame" x="192" y="0.0" width="64" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="account_icon"/>
+                                        <state key="selected" image="account_selected_icon"/>
+                                        <connections>
+                                            <action selector="didPressTab:" destination="odi-F6-IhK" eventType="touchUpInside" id="5zO-Vj-UEN"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.25882352941176467" blue="0.33725490196078434" alpha="1" colorSpace="calibratedRGB"/>
@@ -88,11 +78,12 @@
                         <outletCollection property="buttons" destination="4iS-Ls-wWU" collectionClass="NSMutableArray" id="DPJ-0c-Zdv"/>
                         <outletCollection property="buttons" destination="KPf-zc-p5o" collectionClass="NSMutableArray" id="HlK-2z-LHv"/>
                         <outletCollection property="buttons" destination="83g-bM-Y5Q" collectionClass="NSMutableArray" id="043-Ar-niA"/>
+                        <segue destination="CQO-B3-yNN" kind="modal" identifier="composeSegue" animates="NO" id="r0Z-gg-1Di"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zh7-3x-Dac" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="591" y="406"/>
+            <point key="canvasLocation" x="591" y="425"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="mpd-M3-Cy9">
@@ -146,7 +137,7 @@
         <scene sceneID="gOt-SN-MxQ">
             <objects>
                 <viewController id="CQO-B3-yNN" customClass="ComposeViewController" customModule="Tumblr" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" alpha="0.59999999999999998" contentMode="scaleToFill" id="8tk-N7-Ky3">
+                    <view key="view" contentMode="scaleToFill" id="8tk-N7-Ky3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -156,7 +147,7 @@
                                 <state key="normal" image="chat_icon"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Hd2-s3-ke0">
-                                <rect key="frame" x="212" y="201" width="88" height="96"/>
+                                <rect key="frame" x="212" y="202" width="88" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="link_icon"/>
                             </button>
@@ -184,14 +175,25 @@
                                 <rect key="frame" x="0.0" y="515" width="320" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="nevermind"/>
+                                <connections>
+                                    <action selector="didPressNevermind:" destination="CQO-B3-yNN" eventType="touchUpInside" id="8Qe-og-ff9"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.20784313725490194" green="0.27843137254901962" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.20784313725490194" green="0.27843137254901962" blue="0.36078431372549019" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="chatIcon" destination="1cQ-c4-QbG" id="BIz-FA-h4J"/>
+                        <outlet property="linkIcon" destination="Hd2-s3-ke0" id="VD6-On-WPh"/>
+                        <outlet property="photoIcon" destination="Fnc-J8-JHi" id="utz-g6-W4e"/>
+                        <outlet property="quoteIcon" destination="pyc-vp-AbD" id="Uqa-hY-PP2"/>
+                        <outlet property="textIcon" destination="y7e-fB-Nvg" id="3WG-Zt-XNS"/>
+                        <outlet property="videoIcon" destination="VBj-Vd-pTB" id="ftF-ZP-PtD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vjB-xI-Kb4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1733" y="406"/>
+            <point key="canvasLocation" x="591" y="1116"/>
         </scene>
         <!--Account View Controller-->
         <scene sceneID="5n8-Nj-lk3">
@@ -263,6 +265,7 @@
         <image name="quote_icon" width="75" height="96"/>
         <image name="search_feed" width="320" height="524"/>
         <image name="search_icon" width="35" height="35"/>
+        <image name="search_selected_icon" width="35" height="35"/>
         <image name="text_icon" width="75" height="95"/>
         <image name="trending_feed" width="320" height="1217"/>
         <image name="trending_icon" width="35" height="35"/>

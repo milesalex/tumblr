@@ -33,11 +33,37 @@ class TabBarViewController: UIViewController {
         trendingViewController = storyboard.instantiateViewControllerWithIdentifier("TrendingVC")
         
         viewControllers = [homeViewController, searchViewController, accountViewController, trendingViewController]
+        
+        buttons[selectedIndex].selected = true
+        didPressTab(buttons[selectedIndex])
     }
 
     
     @IBAction func didPressTab(sender: UIButton) {
+        let previousIndex = selectedIndex
+        selectedIndex = sender.tag
         
+        buttons[previousIndex].selected = false
+        let previousVC = viewControllers[previousIndex]
+        
+        previousVC.willMoveToParentViewController(nil)
+        previousVC.view.removeFromSuperview()
+        previousVC.removeFromParentViewController()
+        
+        sender.selected = true
+        let vc = viewControllers[selectedIndex]
+        
+        addChildViewController(vc)
+        
+        vc.view.frame = contentView.bounds
+        contentView.addSubview(vc.view)
+        
+        vc.didMoveToParentViewController(self)
+    }
+    
+    
+    @IBAction func didPressCompose(sender: UIButton) {
+        self.performSegueWithIdentifier("composeSegue", sender: self)
     }
 
     /*
