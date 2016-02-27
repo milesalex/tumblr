@@ -20,6 +20,7 @@
 		DA74C1DD1C7FBB32008DB769 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA74C1DC1C7FBB32008DB769 /* ComposeViewController.swift */; };
 		DA74C1DF1C7FBB3C008DB769 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA74C1DE1C7FBB3C008DB769 /* AccountViewController.swift */; };
 		DA74C1E11C7FBB45008DB769 /* TrendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA74C1E01C7FBB45008DB769 /* TrendingViewController.swift */; };
+		DAC802DD1C81582C0020D487 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC802DC1C81582C0020D487 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		DA74C1DC1C7FBB32008DB769 /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
 		DA74C1DE1C7FBB3C008DB769 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		DA74C1E01C7FBB45008DB769 /* TrendingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrendingViewController.swift; sourceTree = "<group>"; };
+		DAC802DC1C81582C0020D487 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				DA74C1D61C7F8A62008DB769 /* TabBarViewController.swift */,
 				DA74C1A81C7F87E6008DB769 /* Main.storyboard */,
 				DA74C1DC1C7FBB32008DB769 /* ComposeViewController.swift */,
+				DAC802DC1C81582C0020D487 /* LoginViewController.swift */,
 				DA74C1DE1C7FBB3C008DB769 /* AccountViewController.swift */,
 				DA74C1E01C7FBB45008DB769 /* TrendingViewController.swift */,
 				DA74C1DA1C7FBB26008DB769 /* SearchViewController.swift */,
@@ -277,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAC802DD1C81582C0020D487 /* LoginViewController.swift in Sources */,
 				DA74C1DB1C7FBB26008DB769 /* SearchViewController.swift in Sources */,
 				DA74C1E11C7FBB45008DB769 /* TrendingViewController.swift in Sources */,
 				DA74C1A71C7F87E6008DB769 /* ViewController.swift in Sources */,
@@ -509,6 +513,7 @@
 				DA74C1CB1C7F87E6008DB769 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA74C1CC1C7F87E6008DB769 /* Build configuration list for PBXNativeTarget "TumblrTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +522,7 @@
 				DA74C1CE1C7F87E6008DB769 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA74C1CF1C7F87E6008DB769 /* Build configuration list for PBXNativeTarget "TumblrUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +531,7 @@
 				DA74C1D11C7F87E6008DB769 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
